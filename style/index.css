@@ -245,3 +245,46 @@ footer a img:hover {
     justify-content: space-evenly;
   }
 }
+
+@media all and (max-width: 1374px) {
+  header h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-left: 0;
+    border-bottom: 1px dashed grey;
+  }
+
+  header nav {
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+  header nav button {
+    margin: 0;
+  }
+
+  /* intro */
+  #intro {
+    flex-wrap: wrap;
+  }
+
+  #intro h3 {
+    margin: 0 auto;
+    border-bottom: solid 2px grey;
+    padding: 0 1rem 1rem;
+  }
+  #intro img {
+    margin: 1.5rem auto;
+  }
+
+  #introMe {
+    align-items: center;
+  }
+
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+    border-top: 1px dashed grey;
+    padding-top: 1rem;
+  }
+}
+}
