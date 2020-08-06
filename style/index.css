@@ -52,7 +52,6 @@ header nav button:hover {
 
 #intro img {
   margin: 1rem 4rem 2rem 1rem;
-  height: 50%;
   width: 38%;
   border-radius: 0.5rem;
 }
@@ -207,45 +206,6 @@ footer a img:hover {
   }
 }
 
-@media all and (max-width: 500px) {
-  /* header */
-  header h1 {
-    text-align: center;
-  }
-
-  header nav {
-    justify-content: space-around;
-    margin: 2rem auto;
-  }
-
-  /* intro */ 
-  #intro {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #intro img {
-    margin: 1.5rem auto;
-  }
-
-  #introMe button {
-    margin: 1rem auto;
-  }
-
-  #introMe h3 {
-    font-size: 2rem;
-  }
-
-  #introMe p {
-    margin: 0 auto;
-    font-size: 1.5rem;
-  }
-  /* projects-images */
-  #images {
-    justify-content: space-evenly;
-  }
-}
-
 @media all and (max-width: 1374px) {
   header h1 {
     text-align: center;
@@ -274,6 +234,7 @@ footer a img:hover {
   }
   #intro img {
     margin: 1.5rem auto;
+    width: 50rem;
   }
 
   #introMe {
@@ -287,4 +248,49 @@ footer a img:hover {
     padding-top: 1rem;
   }
 }
+
+@media (min-width: 501px) and (max-width: 799px) {
+  #intro img {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  /* header */
+  header h1 {
+    text-align: center;
+  }
+
+  header nav {
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+
+  /* intro */ 
+  #intro {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #intro img {
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+
+  #introMe button {
+    margin: 1rem auto;
+  }
+
+  #introMe h3 {
+    font-size: 2rem;
+  }
+
+  #introMe p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+  }
 }
