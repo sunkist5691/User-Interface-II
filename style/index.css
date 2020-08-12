@@ -33,8 +33,9 @@ header nav button {
   padding: .4rem 1.2rem;
   color: white;
   background-color: lightcoral;
-  border: 0px;
   border-radius: 0.4rem;
+  border: solid;
+  box-shadow: 0 0 5px white;
 }
  
 header nav button:hover { 
@@ -51,8 +52,8 @@ header nav button:hover {
 
 #intro img {
   margin: 1rem 4rem 2rem 1rem;
-  height: 50rem;
-  width: 38rem;
+  width: 38%;
+  border-radius: 0.5rem;
 }
 
 #introMe {
@@ -65,7 +66,7 @@ header nav button:hover {
 
 #introMe h3 {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
+  font-size: 250%;
   margin-bottom: 0.8rem;
 }
 
@@ -76,7 +77,8 @@ header nav button:hover {
   padding: 0.4rem 1.6rem;
   color: white;
   background-color: lightcoral;
-  border: 0px;
+  border: solid;
+  box-shadow: 0 0 8px palevioletred;
   border-radius: 0.4rem;
   margin-bottom: 2rem;
   cursor: pointer;
@@ -89,7 +91,7 @@ header nav button:hover {
 #introMe p {
   font-family: 'Architects Daughter', cursive;
   max-width: 80%;
-  font-size: 1.8rem;
+  font-size: 180%;
   line-height: 2.5rem;
   margin-right: 3rem;
 }
@@ -120,19 +122,23 @@ footer h3 {
 }
 
 footer button {
+  color: white;
+  background-color: lightcoral;
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
   padding: .5rem 2rem;
   margin-bottom: 1rem;
-  transition: all .2s ease-in-out;
   border-radius: 0.4rem;
+  border: solid;
+  box-shadow: 0 0 5px white;
+  transition: all .2s ease-in-out;
 }
 
 footer button:hover {
   color: white;
   transform: scale(1.4);
   background-color: lightcoral;
-  border: 0px;
+  border: solid;
   cursor: pointer;
 }
 
@@ -148,4 +154,144 @@ footer a img:hover {
   border-radius: .7rem;
   border: 2px#0077b5;
 
+}
+
+@media all and (max-width: 1374px) {
+  header h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-left: 0;
+    border-bottom: 1px dashed grey;
+  }
+
+  header nav {
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+  header nav button {
+    margin: 0;
+  }
+
+  /* intro */
+  #intro {
+    flex-wrap: wrap;
+  }
+
+  #intro h3 {
+    margin: 0 auto;
+    border-bottom: solid 2px grey;
+    padding: 0 1rem 1rem;
+  }
+  #intro img {
+    margin: 1.5rem auto;
+    width: 50rem;
+  }
+
+  #introMe {
+    align-items: center;
+  }
+
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+    border-top: 1px dashed grey;
+    padding-top: 1rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* header */
+  header {
+    padding-bottom: 1.2rem
+  }
+
+  header h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-left: 0;
+    border-bottom: 1px dashed grey;
+  }
+
+  header nav {
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  header nav button {
+    margin: 0;
+
+  }
+
+/* intro */
+  #intro {
+    flex-wrap: wrap;
+  }
+
+  #intro h3 {
+    margin: 0 auto;
+    border-bottom: solid 2px grey;
+    padding: 0 1rem 1rem;
+  }
+
+  #intro img {
+    margin: 1.5rem auto;
+  }
+
+  #introMe {
+    align-items: center;
+  }
+
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+    border-top: 1px dashed grey;
+    padding-top: 1rem;
+  }
+}
+
+
+@media (min-width: 501px) and (max-width: 799px) {
+  #intro img {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  /* header */
+  header h1 {
+    text-align: center;
+  }
+
+  header nav {
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+
+  /* intro */ 
+  #intro {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #intro img {
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+
+  #introMe button {
+    margin: 1rem auto;
+  }
+
+  #introMe h3 {
+    font-size: 2rem;
+  }
+
+  #introMe p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+  }
 }
